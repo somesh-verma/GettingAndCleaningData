@@ -59,4 +59,4 @@ names(avgDataPerSubjectPerActivity)<-gsub("^ActivityName.*$", "ActivityName", na
 names(avgDataPerSubjectPerActivity)<-gsub("SubjectID.*$", "SubjectID", names(avgDataPerSubjectPerActivity), perl=TRUE)
 
 #Finally, lets dump the data into a file
-write.table(avgDataPerSubjectPerActivity, file="avgDataPerSubjectPerActivity.txt")
+write.table(avgDataPerSubjectPerActivity, file="avgDataPerSubjectPerActivity.txt", row.name=FALSE)
